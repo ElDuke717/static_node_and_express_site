@@ -1,0 +1,31 @@
+{
+  "name": "static_node_and_express_site",
+  "version": "0.0.1",
+  "description": "A static Node.js and Express site for FSJS project 6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElDuke717/static_node_and_express_site.git"
+  },
+  "keywords": [
+    "project",
+    "project-6",
+    "Node.js",
+    "Express",
+    "Pug"
+  ],
+  "author": "Nick Huemmer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ElDuke717/static_node_and_express_site/issues"
+  },
+  "homepage": "https://github.com/ElDuke717/static_node_and_express_site#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pug": "^3.0.2"
+  }
+}
