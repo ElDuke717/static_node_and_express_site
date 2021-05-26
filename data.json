@@ -1,0 +1,51 @@
+{
+    "projects": 
+    [
+        {
+            "id": "0",
+            "project_name": "A Random Quote Generator",
+            "description": "JavaScript",
+            "technologies": "JavaScript",
+            "live_link": "JavaScript",
+            "github_link": "repo",
+            "image_urls": "blank"
+        },
+        {
+            "id": "1",
+            "project_name": "Data Pagination and Filtering",
+            "description": "JavaScript",
+            "technologies": "JavaScript",
+            "live_link": "JavaScript",
+            "github_link": "repo",
+            "image_urls": "blank"
+        },
+        {
+            "id": "2",
+            "project_name": "Interactive Form",
+            "description": "JavaScript",
+            "technologies": "JavaScript",
+            "live_link": "JavaScript",
+            "github_link": "repo",
+            "image_urls": "blank"
+        },
+        {
+            "id": "3",
+            "project_name": "Gameshow App",
+            "description": "JavaScript",
+            "technologies": "JavaScript",
+            "live_link": "JavaScript",
+            "github_link": "repo",
+            "image_urls": "blank"
+        },
+        {
+            "id": "4",
+            "project_name": "Public API Request",
+            "description": "JavaScript",
+            "technologies": "JavaScript",
+            "live_link": "JavaScript",
+            "github_link": "repo",
+            "image_urls": "blank"
+        }
+    ]
+    
+}
