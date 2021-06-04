@@ -2,7 +2,7 @@
   "name": "static_node_and_express_site",
   "version": "0.0.1",
   "description": "A static Node.js and Express site for FSJS project 6",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
