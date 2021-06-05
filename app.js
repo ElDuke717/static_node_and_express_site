@@ -28,12 +28,15 @@ app.get('/about', (req, res) => {
 //Work in progress - dynamic routes for each project in data.json.
 
 app.get('projects/:id', (req, res) => {
-    const projectID = req.params.id;
-    const project = projects.find( ({id}) => id === +projectID)
-    res.render('project', {  project });
+    // const projectID = req.params.id;
+    // const project = projects.find( ({id}) => id === +projectID)
+    res.render('project', {
+
+    });
 });
 
 
 app.listen(3000, () => {
     console.log('The application is running on localhost:3000!')
+    console.log(projects[0]);
 });
