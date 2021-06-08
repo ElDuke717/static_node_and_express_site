@@ -14,13 +14,13 @@ block content
         //- Use the info in your data file and the comments below to complete this template
 
         //- Use interpolation to dynamically add the project title
-        h1 = `${project.name}`
+        h1 #{title}
 
         //- Use interpolation to dynamically add the project description
-        p Description
+        p #{description}
 
       .project-tech-links-box.box
-        h6 Technologies
+        h6 #{technologies}
         ul
 
           //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
@@ -28,9 +28,9 @@ block content
           li CSS
           li JavaScript
 
-        //- Add the href values to the links below
+        //- Add the href values to the links below- need to figure out how to dynamically add urls
         a.btn-link(href='') Live Demo
-        a.btn-link(href='') GitHub Repo
+        a.btn-link(href='${github_link}') GitHub Repo
 
     .project-img-box.box
 
