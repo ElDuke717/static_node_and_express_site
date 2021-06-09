@@ -31,8 +31,27 @@ app.get('/project/:id', (req, res) => {
     res.render('project', {
         title: projects[req.params.id].project_name,
         description: projects[req.params.id].description,
-        
+
     });
+});
+
+//added error handlers
+// app.use((req, res, next) => {
+//     const err = new Error('Something went wrong!');
+//     err.status = 500;
+//     next(err);
+//   });
+
+app.use((req, res, next) => {
+    const err = new Error('The page you\'re looking for can\'t be found');
+    err.status = 404;
+    next(err);
+});
+  
+app.use((err, req, res, next) => {
+    res.locals.error = err;
+    res.status(err.status);
+    res.render('error');
 });
 
 
