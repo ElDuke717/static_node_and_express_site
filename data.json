@@ -4,47 +4,47 @@
         {
             "id": "0",
             "project_name": "A Random Quote Generator",
-            "description": "JavaScript",
-            "technologies": "JavaScript, HTML, CSS, FartSmells", 
-            "live_link": "JavaScript",
+            "description": "A simple website that generates random quotes.",
+            "technologies": ["JavaScript", "HTML", "CSS"],  
+            "live_link": "https://elduke717.github.io/FSJS-TD-project-1/",
             "github_link": "https://github.com/ElDuke717/FSJS-TD-project-1",
             "image_urls": "blank"
         },
         {
             "id": "1",
             "project_name": "Data Pagination and Filtering",
-            "description": "JavaScript",
-            "technologies": "JavaScript",
-            "live_link": "JavaScript",
-            "github_link": "repo",
+            "description": "An directory of imaginary employees with a search feature.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://elduke717.github.io/data-pagination-and-filtering/",
+            "github_link": "https://github.com/ElDuke717/data-pagination-and-filtering/tree/gh-pages",
             "image_urls": "blank"
         },
         {
             "id": "2",
             "project_name": "Interactive Form",
-            "description": "JavaScript",
-            "technologies": "JavaScript",
-            "live_link": "JavaScript",
-            "github_link": "repo",
+            "description": "This is an interactive form that renders elements based on input.",
+            "technologies": ["JavaScript", "HTML", "CSS", "Regular Expressions"],
+            "live_link": "https://elduke717.github.io/interactive-form/",
+            "github_link": "https://github.com/ElDuke717/interactive-form",
             "image_urls": "blank"
         },
         {
             "id": "3",
             "project_name": "Gameshow App",
-            "description": "JavaScript",
-            "technologies": "JavaScript",
-            "live_link": "JavaScript",
-            "github_link": "repo",
+            "description": "This is a Wheel-of-Fortune style game show app, with some added fun.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://elduke717.github.io/game_show_app/",
+            "github_link": "https://github.com/ElDuke717/game_show_app",
             "image_urls": "blank"
         },
         {
             "id": "4",
             "project_name": "Public API Request",
-            "description": "JavaScript",
-            "technologies": "JavaScript",
-            "live_link": "JavaScript",
-            "github_link": "repo",
-            "image_urls": "blank"
+            "description": "This project pulls random user data from APIs to make a imaginary company directory.",
+            "technologies": ["JavaScript", "HTML", "CSS", "APIs"],
+            "live_link": "https://elduke717.github.io/public_api_request/",
+            "github_link": "https://github.com/ElDuke717/public_api_request",
+            "image_urls": ["/static/images/rsz_3jays_ice_cream.jpg","/static/images/rsz_jays_ice_cream2.jpg","/static/images/rsz_jays_ice_cream3.jpg"]
         }
     ]
     
