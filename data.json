@@ -5,43 +5,48 @@
             "id": "0",
             "project_name": "A Random Quote Generator",
             "description": "A simple website that generates random quotes.",
-            "technologies": ["JavaScript", "HTML", "CSS"],  
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "main_image" :  "/static/images/random_quote_gen_main.jpg",
             "live_link": "https://elduke717.github.io/FSJS-TD-project-1/",
             "github_link": "https://github.com/ElDuke717/FSJS-TD-project-1",
-            "image_urls": "blank"
+            "image_urls": ["/static/images/rsz_random_quote_gen.jpg","/static/images/rsz_random_quote_gen2.jpg","/static/images/rsz_random_quote_gen3.jpg"]
         },
         {
             "id": "1",
             "project_name": "Data Pagination and Filtering",
             "description": "An directory of imaginary employees with a search feature.",
             "technologies": ["JavaScript", "HTML", "CSS"],
+            "main_image" :  "/static/images/data_pagination-main.jpg",
             "live_link": "https://elduke717.github.io/data-pagination-and-filtering/",
             "github_link": "https://github.com/ElDuke717/data-pagination-and-filtering/tree/gh-pages",
-            "image_urls": "blank"
+            "image_urls": ["/static/images/rsz_data_pagination.jpg","/static/images/rsz_data_pagination2.jpg","/static/images/rsz_data_pagination3.jpg"]
         },
         {
             "id": "2",
             "project_name": "Interactive Form",
             "description": "This is an interactive form that renders elements based on input.",
             "technologies": ["JavaScript", "HTML", "CSS", "Regular Expressions"],
+            "main_image" :  "/static/images/interactive_form-main.jpg",
             "live_link": "https://elduke717.github.io/interactive-form/",
             "github_link": "https://github.com/ElDuke717/interactive-form",
-            "image_urls": "blank"
+            "image_urls": ["/static/images/rsz_interactive_form.jpg","/static/images/rsz_interactive_form2.jpg","/static/images/interactive_form3.jpg"]
         },
         {
             "id": "3",
             "project_name": "Gameshow App",
             "description": "This is a Wheel-of-Fortune style game show app, with some added fun.",
             "technologies": ["JavaScript", "HTML", "CSS"],
+            "main_image" :  "/static/images/phrase_hunter-main.jpg",
             "live_link": "https://elduke717.github.io/game_show_app/",
             "github_link": "https://github.com/ElDuke717/game_show_app",
-            "image_urls": "blank"
+            "image_urls": ["/static/images/rsz_phrase_hunter.jpg","/static/images/rsz_phrase_hunter2.jpg","/static/images/rsz_phrase_hunter3.jpg"]
         },
         {
             "id": "4",
             "project_name": "Public API Request",
             "description": "This project pulls random user data from APIs to make a imaginary company directory.",
             "technologies": ["JavaScript", "HTML", "CSS", "APIs"],
+            "main_image" :  "/static/images/jays_ice_cream-main.jpg",
             "live_link": "https://elduke717.github.io/public_api_request/",
             "github_link": "https://github.com/ElDuke717/public_api_request",
             "image_urls": ["/static/images/rsz_3jays_ice_cream.jpg","/static/images/rsz_jays_ice_cream2.jpg","/static/images/rsz_jays_ice_cream3.jpg"]

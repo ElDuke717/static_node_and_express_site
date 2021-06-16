@@ -18,7 +18,7 @@ app.use('/static', express.static('public'));
 
 //set routes
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('index', { projects });
 });
 
 app.get('/about', (req, res) => {
@@ -42,6 +42,7 @@ app.get('/project/:id', (req, res) => {
 app.use((req, res, next) => {
     const err = new Error('The page you\'re looking for can\'t be found');
     err.status = 404;
+    //res.render('page-not-found');
     next(err);
 });
   
@@ -58,7 +59,6 @@ app.use((err, req, res, next) => {
  });
 
 
-app.listen(3000, () => {
-    console.log('The application is running on localhost:3000!')
-    console.log(projects[0].project_name);
+app.listen(3002, () => {
+    console.log('The application is running on localhost:3002!')
 });

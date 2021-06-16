@@ -4,19 +4,14 @@ block content
 
   article.portfolio-intro
 
-    //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
-    h1 My Portfolio
+    
+    h1 Checkout some of my JavaScript Projects!
 
-    //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Here are some projects that I have built or am working on.
+    p Here are some things that I have built or am working on.
 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
-
-      //- ol
-      //-   each project in projects  
-      //-     li= project
 
       //- Use the Pug `each` iterator to loop over the projects in your data file  
       
@@ -24,9 +19,9 @@ block content
           //- The paths in the link's href and img's src attributes
           //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
           //- The project title for the h5 element's text
-
+      each project in projects
         .cell
-          a(href='#')
-            img.thumbnail(src='https://placehold.it/550x550', alt='')
-            h5 My Site
+          a(href=`/project/${project.id}` target="_blank")
+            img.thumbnail(src=`${project.main_image}`, alt=`An image of ${project.id}`)
+            h5= project.project_name 
 
