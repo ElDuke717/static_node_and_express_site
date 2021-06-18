@@ -1,6 +1,8 @@
 # FSJS project 6: static_node_and_express_site
 This is a static site generated using Node.js, the Express framework and the Pug templating engine. 
 
+## Note that this site runs on localhost:3000
+
 ## Exceeds Expectations Features
 
 * Running `npm start` serves the app
