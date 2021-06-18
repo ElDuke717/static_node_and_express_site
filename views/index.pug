@@ -5,7 +5,7 @@ block content
   article.portfolio-intro
 
     
-    h1 Checkout some of my JavaScript Projects!
+    h1.titles  Checkout some of my projects!
 
     p Here are some things that I have built or am working on.
 
@@ -13,15 +13,10 @@ block content
   article.portfolio-project-thumbs
     .projects-box.box.grid
 
-      //- Use the Pug `each` iterator to loop over the projects in your data file  
       
-        //- Use the example Pug code below and interpolated template literals as needed to dynamically generate:
-          //- The paths in the link's href and img's src attributes
-          //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
-          //- The project title for the h5 element's text
       each project in projects
         .cell
           a(href=`/project/${project.id}` target="_blank")
-            img.thumbnail(src=`${project.main_image}`, alt=`An image of ${project.id}`)
+            img.thumbnail(src=`${project.main_image}`, alt=`A thumbnail of the project ${project.project_name}`)
             h5= project.project_name 
 

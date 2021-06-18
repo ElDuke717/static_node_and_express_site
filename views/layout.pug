@@ -6,6 +6,7 @@ html(lang="en" dir="ltr")
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Portfolio Site
     link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"> 
     link(rel='stylesheet', href='/static/css/normalize.css')
     link(rel='stylesheet', href='/static/css/styles.css')
 
@@ -17,21 +18,18 @@ html(lang="en" dir="ltr")
           img.thumbnail(src='/static/images/rsz_lo--2.jpg', alt='')
         .dev-intro-box
 
-          //- Replace with your name
+          
           h5 Nick Huemmer
 
-          //- Replace with description of who you are, what you do, and why you are so awesome
-          p Full Stack JavaScript Developer
+          p Full Stack JavaScript, Front End Web Developer and Food Scientist
 
-          //- Add path from your '/about' route handler to the href below
-          a(href='') Learn More &rarr;
+          a(href='/about') Learn More &rarr;
 
     .wrapper
       .header
         .header-info-box
           button#menu-icon.menu-icon(type='button' data-toggle='my-info')
 
-          //- Replace with your name — this is for the mobile layout
           span Nick Huemmer 
 
       block content

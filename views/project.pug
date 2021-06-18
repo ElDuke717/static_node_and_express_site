@@ -11,12 +11,9 @@ block content
     .inner-wrapper.flex-row-wrap.two-col
       .project-info-box.box
 
-        //- Use the info in your data file and the comments below to complete this template
 
-        //- Use interpolation to dynamically add the project title
         h1 #{title}
 
-        //- Use interpolation to dynamically add the project description
         p #{description}
 
       .project-tech-links-box.box
@@ -26,7 +23,6 @@ block content
             li= item
           
 
-        //- Add the href values to the links below- need to figure out how to dynamically add urls
         a.btn-link(href=`${live_demo}` target="_blank") Live Demo
         a.btn-link(href=`${github_link}` target="_blank") GitHub Repo
 

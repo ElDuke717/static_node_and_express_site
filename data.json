@@ -14,7 +14,7 @@
         {
             "id": "1",
             "project_name": "Data Pagination and Filtering",
-            "description": "An directory of imaginary employees with a search feature.",
+            "description": "A directory of imaginary employees with a search feature.",
             "technologies": ["JavaScript", "HTML", "CSS"],
             "main_image" :  "/static/images/data_pagination-main.jpg",
             "live_link": "https://elduke717.github.io/data-pagination-and-filtering/",

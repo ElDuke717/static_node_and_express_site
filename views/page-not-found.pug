@@ -1,8 +1,13 @@
 extends layout.pug
 
 block content
-  h1 The page you're looking for doesn't exist. 
-  h2= error.message
-  h2= error.status
-  h3 Stack trace:
-  pre= error.stack
+  
+  article.portfolio-error 
+    h1 &#x1F62B
+    h1 It's a
+    h1= error.status
+    h2 NOT FOUND ERROR 
+    h2= error.message
+    
+    h3 You're connected to the server, but the server could not find the page you're looking for.  
+    h3 Please check the URL to see if you typed it in correctly.

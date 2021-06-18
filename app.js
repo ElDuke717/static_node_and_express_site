@@ -4,7 +4,7 @@ const { projects } = require('./data.json');
 const path = require('path');
 const app = express();
 
-//const { projects } = data;
+
 
 //*******************/
 //Set Middleware    /
@@ -13,7 +13,7 @@ const app = express();
 //view engine setup
 app.set('view engine', 'pug');
 
-//use a static route and the express.static method to serve static files 
+//Static route and the express.static method to serve static files 
 app.use('/static', express.static('public'));
 
 //set routes
@@ -28,6 +28,9 @@ app.get('/about', (req, res) => {
 //Work in progress - dynamic routes for each project in data.json.
 
 app.get('/project/:id', (req, res) => {
+    // const projectID = req.params.id;
+    // const project = projects.find(({ id }) => id === +projectID );
+    
     res.render('project', { 
         title: projects[req.params.id].project_name,
         description: projects[req.params.id].description,
@@ -49,7 +52,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     res.locals.error = err;
     res.status(err.status);
-    res.render('error');
+    res.render('page-not-found');
 });
 
 app.use((err, req, res, next) => {
