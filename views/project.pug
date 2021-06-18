@@ -23,12 +23,11 @@ block content
             li= item
           
 
-        a.btn-link(href=`${live_demo}` target="_blank") Live Demo
-        a.btn-link(href=`${github_link}` target="_blank") GitHub Repo
+      a.btn-link-about(href=`${live_demo}` target="_blank") Live Demo
+      a.btn-link-about(href=`${github_link}` target="_blank") GitHub Repo
 
     .project-img-box.box
 
-      //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
       img.project-img(src=`${image_urls[0]}`, alt=`An image of ${description}`)
       img.project-img(src=`${image_urls[1]}`, alt=`An image of ${description}`)
       img.project-img(src=`${image_urls[2]}`, alt=`An image of ${description}`)

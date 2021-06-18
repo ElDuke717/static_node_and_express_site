@@ -303,10 +303,10 @@ nav a span {
   text-align: center;
   color: #fefefe;
   width: 100%;
-  max-width: 255px;
-  margin: auto 0 5px 0;
+  max-width: 200px;
+  margin: 20px;
   padding: 0.85em 1em;
-  background-color: #333;
+  background-color: rgb(15, 15, 15);
   border: 1px solid transparent;
   box-shadow: 2px 2px 2px grey;
 }
