@@ -3,6 +3,8 @@ This is a static site generated using Node.js, the Express framework and the Pug
 
 ## Note that this site runs on localhost:3000
 
+## This is the second submittal - please note that the error handler for 404 errors has been fixed and that when `/noroute` and `project/noroute` routes are served, both will render a 404 error.  In the previous submittal, only the `/noroute` (or similar non-existent routes) would cause the 404 error handler to render.  `project/noroute` would only render the `error` view instead of the 404 `page-not-found` view.  It should all work as designed now.
+
 ## Exceeds Expectations Features
 
 * Running `npm start` serves the app
