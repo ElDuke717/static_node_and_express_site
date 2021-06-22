@@ -4,6 +4,7 @@ const { projects } = require('./data.json');
 const path = require('path');
 const app = express();
 
+var createError = require('http-errors');
 
 
 //*******************/
@@ -28,9 +29,16 @@ app.get('/about', (req, res) => {
 
 //dynamic project routes for each project in data.json.
 
-app.get('/project/:id', (req, res) => {
+app.get('/project/:id', (req, res, next) => {
     const id = req.params.id;
     
+    if (projects[id] === undefined) {
+        console.log('The page you\'re looking for can\'t be found')
+        //err.status = 404;
+        res.sendStatus(404);
+        res.render('page-not-found')
+        next(err)
+    } else if (projects) {
     res.render('project', { 
         title: projects[id].project_name,
         description: projects[id].description,
@@ -39,28 +47,40 @@ app.get('/project/:id', (req, res) => {
         github_link: projects[id].github_link,
         image_urls: projects[id].image_urls
     });
+    
+    } 
 });
 
 //Error handlers
+
+//404 handler
 app.use((req, res, next) => {
     const err = new Error('The page you\'re looking for can\'t be found');
     err.status = 404;
+    console.log('404 error handler called');
     next(err);
 });
   
+// app.use(function(req, res, next) {
+//     next(createError(404));
+//   });
+
+// app.use((err, req, res, next) => {
+//     res.locals.error = err;
+//     res.status(err.status);
+//     res.render('page-not-found');
+// });
+
 app.use((err, req, res, next) => {
     res.locals.error = err;
     res.status(err.status);
-    res.render('page-not-found');
-});
-
-app.use((err, req, res, next) => {
     res.status(500);
     res.render('error');
     res.send("Oops, something went wrong.")
+    console.log('There was an error - check out the stack trace for more info.')
  });
 
 
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log('The application is running on localhost:3000!')
 });
