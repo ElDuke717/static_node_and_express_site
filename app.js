@@ -34,10 +34,7 @@ app.get('/project/:id', (req, res, next) => {
     
     if (projects[id] === undefined) {
         console.log('The page you\'re looking for can\'t be found')
-        //err.status = 404;
-        res.sendStatus(404);
-        res.render('page-not-found')
-        next(err)
+        next();
     } else if (projects) {
     res.render('project', { 
         title: projects[id].project_name,
@@ -60,17 +57,15 @@ app.use((req, res, next) => {
     console.log('404 error handler called');
     next(err);
 });
-  
-// app.use(function(req, res, next) {
-//     next(createError(404));
-//   });
 
-// app.use((err, req, res, next) => {
-//     res.locals.error = err;
-//     res.status(err.status);
-//     res.render('page-not-found');
-// });
+//renders the 'page-not-found' view
+app.use((err, req, res, next) => {
+    res.locals.error = err;
+    res.status(err.status);
+    res.render('page-not-found');
+});
 
+//Catch-all error handler
 app.use((err, req, res, next) => {
     res.locals.error = err;
     res.status(err.status);
@@ -80,7 +75,6 @@ app.use((err, req, res, next) => {
     console.log('There was an error - check out the stack trace for more info.')
  });
 
-
-app.listen(3001, () => {
+app.listen(3000, () => {
     console.log('The application is running on localhost:3000!')
 });
