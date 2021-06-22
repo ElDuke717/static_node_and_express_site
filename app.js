@@ -43,8 +43,7 @@ app.get('/project/:id', (req, res, next) => {
         live_demo: projects[id].live_link,
         github_link: projects[id].github_link,
         image_urls: projects[id].image_urls
-    });
-    
+        });
     } 
 });
 
