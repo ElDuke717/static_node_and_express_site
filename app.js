@@ -22,6 +22,10 @@ app.get('/', (req, res) => {
     res.render('index', { projects });
 });
 
+app.get('/error', (req, res) => {
+    res.render('error');
+})
+
 //about route
 app.get('/about', (req, res) => {
     res.render('about');
@@ -70,7 +74,7 @@ app.use((err, req, res, next) => {
     res.status(err.status);
     res.status(500);
     res.render('error');
-    res.send("Oops, something went wrong.")
+    //res.send("Oops, something went wrong.")
     console.log('There was an error - check out the stack trace for more info.')
  });
 
