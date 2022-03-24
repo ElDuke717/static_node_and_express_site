@@ -58,6 +58,8 @@ app.use((req, res, next) => {
     const err = new Error('The page you\'re looking for can\'t be found');
     err.status = 404;
     console.log('404 error handler called');
+    //req.url;
+    //req.get('host');
     next(err);
 });
 
